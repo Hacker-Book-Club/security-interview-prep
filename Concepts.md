@@ -42,7 +42,32 @@
 	- https://portswigger.net/web-security/cross-site-scripting/dom-based
 
 
+### Remediation 
+- 
+- 
+- https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
+
 ## SQL Injections
+- When input data is not sanitized (and certain characters are not escaped) and a request accesses a database, a malicious actor can manipulate data and execute commands on the host.
+#### Impact
+	- Information that should not be displayed can be returned (cross tenant access)
+	- data can be deleted
+	- Integrity, Availability, and Confidentiality are all affected.
+	- Compromises the underlying servers, backend, and can result in DoS.
+	- Can result in a backdoor and long-term compromise
+	- Regulatory fines and reputational damage
+#### Detection & Prevention
+
+
+
+	- Burp Suite
+	- Manual testing
+	- Agent based logging
+	- Prepared Statements / Parameterized Queries
+		- Ensure attackers cannot change what a query does w/ injection
+	- https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+	- https://www.kitploit.com/p/sql-injection-tools.html
+
 
 ## Private Keying/Key Management
 ## Authentication vs Authorization
