@@ -43,8 +43,6 @@
 
 
 ### Remediation 
-- 
-- 
 - https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
 
 ## SQL Injections
@@ -70,5 +68,16 @@
 
 
 ## Private Keying/Key Management
+### Rules/Practices for Effective Key Management
+1. Key life cycle management (generation, distribution, destruction)
+2. Key compromise, recovery, and zeroization
+3. Key storage
+4. Key agreement
+- achieve consensus on cryptographic strategy for an organization, project, or application.
+	- document and map all components processing and storing cryptographic secrets.
+	- Not all data is created equal - Pick the right approach - Security objectives of an application must be considered
+		- Some cryptographic functions are more computational expensive/slow than others.
+		- Not one size fits all
+
 ## Authentication vs Authorization
 ## Cryptography - Encryption, private key vs public key, etc
