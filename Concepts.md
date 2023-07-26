@@ -1,4 +1,4 @@
-## XSS
+## **XSS**
 
 ##### What is XSS
 - XSS is a type of injection attack where malicious scripts are added to otherwise benign assets.
@@ -46,6 +46,7 @@
 - https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
 
 ## SQL Injections
+
 - When input data is not sanitized (and certain characters are not escaped) and a request accesses a database, a malicious actor can manipulate data and execute commands on the host.
 #### Impact
 	- Information that should not be displayed can be returned (cross tenant access)
@@ -55,9 +56,6 @@
 	- Can result in a backdoor and long-term compromise
 	- Regulatory fines and reputational damage
 #### Detection & Prevention
-
-
-
 	- Burp Suite
 	- Manual testing
 	- Agent based logging
@@ -65,6 +63,7 @@
 		- Ensure attackers cannot change what a query does w/ injection
 	- https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
 	- https://www.kitploit.com/p/sql-injection-tools.html
+
 
 
 ## Private Keying/Key Management
@@ -80,4 +79,34 @@
 		- Not one size fits all
 
 ## Authentication vs Authorization
+#### Authentication
+- What is Authentication
+	- Ensuring that someone is who they claim to be
+	- Match a person's claimed identity against one or more authentication factors that are bound to that credential.
+	- Secure auth
+	- entication calls for a multi-factor approach.
+		- Combine multiple factors from two or more categories.
+	- Sub-factors | heuristics:
+		- location - where you are
+		- time - when are you trying to authenticate
+		We usually alert on any strange behavior if possible. This requires establishing a set of **baseline behaviors** for users. 
+	- Authentication Factors:
+		- Something you know | Memory/Knowledge-based:
+			- Pin, password, ID number, Challenge question/image
+		- Something you have | Possession/Property-based:
+			- Virtual card, certificates, access card, key, key fob, ubikey device(hardware tokens)
+		- Something you are | Inherent factors or Biologically based
+			- Iris scan, finger print, facial recognition, DNA test 
+- Features of Authentication
+	- Responds with a 'yes' or 'no' depending on the result of a request - does not expose PII
+	- Fail securely - handle exceptions gracefully incase of failure. Create fault tolerant systems
+	- It should be auditable with tamper proof logs - organizational operators should be able pull this information
+	- Should not enable tracking, profiling, etc - outside of the requirements for authentication and auditability.
+	- Reduce threats - guessing, eavesdropping, replay/manipulation of comms.
+- references:
+	- https://id4d.worldbank.org/guide/authentication-mechanisms
+#### Authorization
+
+
+
 ## Cryptography - Encryption, private key vs public key, etc
