@@ -38,7 +38,6 @@
 	- EX: https://portswigger.net/web-security/cross-site-scripting/stored
 - DOM-based XSS uses client-side code after assets are loaded, manipulating the browser environment 
 	- EX: 
-	- 
 	- https://portswigger.net/web-security/cross-site-scripting/dom-based
 
 
@@ -79,7 +78,7 @@
 		- Not one size fits all
 
 ## Authentication vs Authorization
-#### Authentication
+#### Authentication / AuthN
 - What is Authentication
 	- Ensuring that someone is who they claim to be
 	- Match a person's claimed identity against one or more authentication factors that are bound to that credential.
@@ -105,8 +104,20 @@
 	- Reduce threats - guessing, eavesdropping, replay/manipulation of comms.
 - references:
 	- https://id4d.worldbank.org/guide/authentication-mechanisms
-#### Authorization
+#### Authorization / AuthZ
+- Process of granting an **authenticated** party permission to do something - access a resource
+- Authorization is the function of policy definitions
+ **Ex:** giving someone admin access to an application or permission to download a particular file from a server.
+	- Sometimes referred to as access control or client privilege.
+	- Authorization specifies what data you can access and what you can do with that data.
+	- permissions are **privileges** (or rights) when it becomes assigned to someone.
+	- The breath of what people have access/privileges to is scope - the confines of their access
+
+- Examples:
+	- Most modern multi-user OSes use - Role Based Access Control - RBAC
+		- Verified identities to consumers
+		- Checks that consumers have been **authorized** to access the resource.
+		- Defined by an **authority** like corporate security teams (corpsec)
 
 
-
-## Cryptography - Encryption, private key vs public key, etc
+____
