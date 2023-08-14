@@ -78,7 +78,7 @@
 		- Not one size fits all
 
 ## Authentication vs Authorization
-#### Authentication / AuthN
+#### Authentication | AuthN
 - What is Authentication
 	- Ensuring that someone is who they claim to be
 	- Match a person's claimed identity against one or more authentication factors that are bound to that credential.
@@ -104,7 +104,7 @@
 	- Reduce threats - guessing, eavesdropping, replay/manipulation of comms.
 - references:
 	- https://id4d.worldbank.org/guide/authentication-mechanisms
-#### Authorization / AuthZ
+#### Authorization | AuthZ
 - Process of granting an **authenticated** party permission to do something - access a resource
 - Authorization is the function of policy definitions
  **Ex:** giving someone admin access to an application or permission to download a particular file from a server.
